@@ -22,6 +22,7 @@ while(True):
     # END OF FRAME
     if not ret:
         break
+    
     # STORING THE CURRENT FRAME
     name = "./frames/" + str(frameNumber) + '.jpg'
     print('beep boop making frame number ')
