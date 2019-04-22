@@ -25,12 +25,12 @@ while(True):
     
     # STORING THE CURRENT FRAME
     name = "./frames/" + str(frameNumber) + '.jpg'
-    print('beep boop making frame number ')
-    print(frameNumber)
+    print('beep boop making frame number '+ str(frameNumber)
     cv2.imwrite(name, frame)
 
     # CHANGING BACKGROUND
     time.sleep(0.025)
+    # 0.025 IS A NUMBER THAT CAN BE CHANGED BUT ANY LOWER NUMBERS WILL REQUIRE BETTER HARDWARE AS IT WILL STUTTER OTHERWISE
     cwd = os.getcwd()
     name2 = "/frames/" + str(frameNumber) + '.jpg'
     path= cwd+ name2
